@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rclone-drive-z</title>
+<style>body{font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;max-width:760px;margin:3rem auto;padding:0 1.25rem;color:#202124}h1,h2{line-height:1.25}.note{background:#f3f6fb;border-left:4px solid #4f6bed;padding:1rem;margin:1.5rem 0}a{color:#174ea6}footer{margin-top:3rem;border-top:1px solid #dadce0;padding-top:1rem;color:#5f6368}</style>
+</head>
+<body>
+<main>
+<h1>rclone-drive-z</h1>
+<p>Windows PC에서 rclone을 사용해 Google Drive에서 사용자가 지정한 Google Drive 공유 폴더 하나를 네트워크 드라이브로 연결하는 로컬 설정입니다.</p>
+<p>This is a local Windows setup that uses rclone to mount one user-selected folder shared through Google Drive as a network drive.</p>
+<div class="note"><strong>권한 안내 / Permission notice</strong><br>이 설정은 Google Drive의 <code>drive</code> OAuth 범위를 사용합니다. 이 범위는 선택해 마운트한 폴더보다 넓으며, rclone이 승인된 Google 계정의 Drive 파일 전체에 접근할 수 있게 합니다. 실제 작업은 계정 소유자의 동의와 Google Drive 권한에 따릅니다.<br><br>This setup requests the Google Drive <code>drive</code> OAuth scope. It is broader than the single mounted folder and can permit rclone to access files across the authorizing account's Drive. Operations depend on the account holder's consent and Google Drive permissions.</div>
+<h2>작동 방식 / How it works</h2>
+<p>rclone은 사용자의 PC에서 실행되며 Google Drive API에 직접 요청합니다. 이 설정의 운영자는 Drive 파일을 받거나 별도 앱 서버에 저장하지 않습니다. 로컬 인증 설정, 캐시 및 실행 로그가 PC에 저장될 수 있습니다.</p>
+<p>rclone runs on the user's PC and communicates directly with the Google Drive API. The app operator does not receive Drive files or store them on a separate app server. Local authentication settings, cache files, and mount logs may be stored on the PC.</p>
+<p><a href="privacy.html">개인정보처리방침 / Privacy Policy</a></p>
+</main>
+<footer>문의는 Google OAuth 동의 화면에 표시된 사용자 지원 이메일로 연락해 주세요.<br>For support, use the user support email shown on the Google OAuth consent screen.</footer>
+</body>
+</html>
+
+
